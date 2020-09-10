@@ -1,10 +1,10 @@
+import 'package:first_flutter_demo/third/component/state.dart';
 import 'package:fish_redux/fish_redux.dart';
 
-//TODO replace with your own action
-enum ThirdAction { action }
+enum ThirdAction { dataReady }
 
 class ThirdActionCreator {
-  static Action onAction() {
-    return const Action(ThirdAction.action);
+  static Action onDataReadyAction(List<CardState> cards) {
+    return Action(ThirdAction.dataReady, payload: cards);
   }
 }

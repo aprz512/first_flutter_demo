@@ -9,6 +9,7 @@ Effect<EntryState> buildEffect() {
   return combineEffects(<Object, Effect<EntryState>>{
     EntryAction.firstDemo: _toFirstDemoEffect,
     EntryAction.secondDemo: _toSecondDemoEffect,
+    EntryAction.thirdDemo: _toThird,
   });
 }
 
@@ -21,3 +22,6 @@ void _toSecondDemoEffect(Action action, Context<EntryState> ctx) {
   Navigator.pushNamed(ctx.context, secondListPage);
 }
 
+void _toThird(Action action, Context<EntryState> ctx) {
+  Navigator.pushNamed(ctx.context, thirdPage);
+}
