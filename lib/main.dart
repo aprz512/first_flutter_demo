@@ -1,3 +1,4 @@
+import 'package:first_flutter_demo/fourth/page.dart';
 import 'package:first_flutter_demo/page_route_name.dart';
 import 'package:first_flutter_demo/second/page1/page.dart';
 import 'package:first_flutter_demo/second/page2/page.dart';
@@ -22,7 +23,8 @@ class MyApp extends StatelessWidget {
         firstPage: FirstPage(),
         secondListPage: ListPage(),
         secondDetailPage: DetailPage(),
-        thirdPage: ThirdPage()
+        thirdPage: ThirdPage(),
+        fourthPage: FourthPage(),
       },
     );
 

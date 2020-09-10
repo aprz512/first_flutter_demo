@@ -1,6 +1,6 @@
 import 'package:fish_redux/fish_redux.dart';
 
-enum EntryAction { firstDemo, secondDemo, thirdDemo }
+enum EntryAction { firstDemo, secondDemo, thirdDemo, fourthDemo }
 
 class EntryActionCreator {
   static Action toFirstDemoAction() {
@@ -14,5 +14,10 @@ class EntryActionCreator {
   static Action toThirdAction() {
     // const 修饰，可以理解为单利（但是又不是）
     return const Action(EntryAction.thirdDemo);
+  }
+
+  static Action toFourthAction() {
+    // const 修饰，可以理解为单利（但是又不是）
+    return const Action(EntryAction.fourthDemo);
   }
 }
