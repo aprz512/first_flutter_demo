@@ -14,7 +14,10 @@ Effect<ThirdState> buildEffect() {
 
 // 将页面数据准备好
 void _init(Action action, Context<ThirdState> ctx) {
-  final List<CardState> cards = <CardState>[CardState(index: 1), CardState(index: 2), CardState(index: 3)];
+  final List<CardState> cards = <CardState>[
+    CardState(index: 1),
+    CardState(index: 2)
+  ];
 
   ctx.dispatch(ThirdActionCreator.onDataReadyAction(cards));
 }

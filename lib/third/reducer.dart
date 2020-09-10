@@ -13,6 +13,7 @@ Reducer<ThirdState> buildReducer() {
 
 ThirdState _onDataReadyAction(ThirdState state, Action action) {
   final ThirdState newState = state.clone();
-  newState..cards = action.payload;
+  newState..cardState1 = action.payload[0];
+  newState..cardState2 = action.payload[1];
   return newState;
 }

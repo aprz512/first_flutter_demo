@@ -1,13 +1,18 @@
 import 'package:first_flutter_demo/third/component/state.dart';
 import 'package:fish_redux/fish_redux.dart';
 
-class ThirdState implements Cloneable<ThirdState> {
+import 'component/state.dart';
+import 'component/state.dart';
 
-  List<CardState> cards;
+class ThirdState implements Cloneable<ThirdState> {
+  CardState cardState1;
+  CardState cardState2;
 
   @override
   ThirdState clone() {
-    return ThirdState();
+    return ThirdState()
+      ..cardState1 = cardState1
+      ..cardState2 = cardState2;
   }
 }
 
