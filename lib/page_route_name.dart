@@ -7,3 +7,4 @@
  const String fifthThreePage = '/fifth/three';
  const String fifthTwoPage = '/fifth/two';
  const String fifthOnePage = '/fifth/one';
+ const String sixthPage = '/sixth';

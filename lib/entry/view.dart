@@ -1,3 +1,5 @@
+import 'package:first_flutter_demo/sixth/action.dart';
+import 'package:first_flutter_demo/sixth/store.dart';
 import 'package:fish_redux/fish_redux.dart';
 import 'package:flutter/material.dart';
 
@@ -28,6 +30,14 @@ Widget buildView(EntryState state, Dispatch dispatch, ViewService viewService) {
           }),
           _buildButton("第五个Demo，广播", () {
             dispatch(EntryActionCreator.toFifthAction());
+          }),
+          _buildButton("先点我，改变主题颜色，再点第六个demo", () {
+            // 要使用 GlobalStore 来 dispatch
+            // page 里面也是使用的 store，在page里面调用 dispatch 的时候，就是调用到的 page 里面的 store 的 dispatch
+            GlobalStore.store.dispatch(GlobalActionCreator.onchangeThemeColor());
+          }),
+          _buildButton("第六个Demo，全局状态", () {
+            dispatch(EntryActionCreator.toSixthDemo());
           }),
         ],
       ),

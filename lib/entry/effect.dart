@@ -12,6 +12,7 @@ Effect<EntryState> buildEffect() {
     EntryAction.thirdDemo: _toThird,
     EntryAction.fourthDemo: _toFourth,
     EntryAction.fifthDemo: _toFifth,
+    EntryAction.sixthDemo: _toSixth,
   });
 }
 
@@ -34,4 +35,8 @@ void _toFourth(Action action, Context<EntryState> ctx) {
 
 void _toFifth(Action action, Context<EntryState> ctx) {
   Navigator.pushNamed(ctx.context, fifthOnePage);
+}
+
+void _toSixth(Action action, Context<EntryState> ctx) {
+  Navigator.pushNamed(ctx.context, sixthPage);
 }
