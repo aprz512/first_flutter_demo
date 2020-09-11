@@ -26,6 +26,9 @@ Widget buildView(EntryState state, Dispatch dispatch, ViewService viewService) {
           _buildButton("第四个Demo，列表", () {
             dispatch(EntryActionCreator.toFourthAction());
           }),
+          _buildButton("第五个Demo，广播", () {
+            dispatch(EntryActionCreator.toFifthAction());
+          }),
         ],
       ),
     ),

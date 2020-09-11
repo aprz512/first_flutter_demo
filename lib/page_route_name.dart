@@ -4,3 +4,6 @@
  const String secondDetailPage = '/second/detail';
  const String thirdPage = '/third';
  const String fourthPage = '/fourth';
+ const String fifthThreePage = '/fifth/three';
+ const String fifthTwoPage = '/fifth/two';
+ const String fifthOnePage = '/fifth/one';
